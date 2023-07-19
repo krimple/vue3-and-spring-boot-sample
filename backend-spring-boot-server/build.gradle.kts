@@ -18,7 +18,7 @@ repositories {
 }
 
 dependencies {
-    api("org.springframework.boot:spring-boot-starter-webflux:3.1.0")
+    api("org.springframework.boot:spring-boot-starter-webflux:3.1.1")
     api("org.springframework.boot:spring-boot-configuration-processor:3.1.0")
     api("org.springframework.boot:spring-boot-starter-logging:3.1.0")
     api("org.springframework.boot:spring-boot-docker-compose:3.1.0")

@@ -1,15 +1,16 @@
 package com.chariot.demos.springboot.restfulserver.web;
 
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/customers")
+@RequestMapping("/api/customers/")
 public class CustomerController {
 
-  @ResponseStatus(HttpStatus.OK)
-  public void addCustomer() {
+  @PostMapping("vip-form")
+  @ResponseStatus(HttpStatus.NO_CONTENT)
+  public String processVIPForm(@RequestBody String requestBody) {
+    System.out.println(requestBody);
+    return "";
   }
 }
