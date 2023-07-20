@@ -1,5 +1,21 @@
 logging:
   level:
     org:
-      springframework: trace
+      springframework:
+        jdbc:
+          core: debug
+        beans: info
+        context: debug
     root: warn
+
+spring:
+  datasource:
+    username: postgres
+    password: postgres
+    url:  "jdbc:postgresql://localhost:5432/demo"
+    hikari:
+      minimum-idle: 2
+      maximum-pool-size: 30
+      connection-test-query: SELECT 1
+
+

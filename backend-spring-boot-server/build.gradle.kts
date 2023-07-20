@@ -19,21 +19,22 @@ repositories {
 
 dependencies {
     api("org.springframework.boot:spring-boot-starter-webflux:3.1.1")
-    api("org.springframework.boot:spring-boot-configuration-processor:3.1.0")
-    api("org.springframework.boot:spring-boot-starter-logging:3.1.0")
-    api("org.springframework.boot:spring-boot-docker-compose:3.1.0")
+    api("org.springframework.boot:spring-boot-configuration-processor:3.1.1")
+    api("org.springframework.boot:spring-boot-starter-logging:3.1.1")
+    api("org.springframework.boot:spring-boot-starter-jdbc:3.1.1")
+    api("org.springframework.boot:spring-boot-docker-compose:3.1.1")
     api("org.mockito:mockito-junit-jupiter:5.2.0")
     api("com.google.code.gson:gson:2.10.1")
-    runtimeOnly("org.springframework.boot:spring-boot-devtools:3.1.0")
+    runtimeOnly("org.springframework.boot:spring-boot-devtools:3.1.1")
     runtimeOnly("org.postgresql:postgresql:42.6.0")
-    testImplementation("org.springframework.boot:spring-boot-starter-test:3.1.0")
+    testImplementation("org.springframework.boot:spring-boot-starter-test:3.1.1")
     testImplementation("io.projectreactor:reactor-test:3.5.6")
-    testImplementation("org.springframework.boot:spring-boot-testcontainers:3.1.0")
+    testImplementation("org.springframework.boot:spring-boot-testcontainers:3.1.1")
     testImplementation("org.testcontainers:postgresql:1.18.0")
     testImplementation("org.testcontainers:junit-jupiter:1.18.0")
     testImplementation("net.java.dev.jna:jna:5.12.1")
     testImplementation("org.assertj:assertj-core:3.24.2")
-    api("org.springframework.boot:spring-boot-starter-tomcat:3.1.0")
+    api("org.springframework.boot:spring-boot-starter-tomcat:3.1.1")
 }
 
 group = "com.chariot"
